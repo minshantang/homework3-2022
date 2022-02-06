@@ -77,7 +77,7 @@ a:link {
 
 /* Requirement 2 code here*/
 a:hover {
-  text-decoration-line: underline;
+  text-decoration: underline;
   text-decoration-style: wavy;
 }
 
@@ -109,18 +109,33 @@ a:focus {
 
 /* Requirement 6 */
 .intro {
-  background-image: url("../images/header.jpg");
-  background-color: #707070;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 400px;
+  background-image: url("../images/header.jpg");
 }
 
 /* Requirement 7 */
-.about, .client, .method, .contact {
+.about, .clients, .method, .contact {
   grid-column: 2 / span 1;
+}
+
+.about{
+  grid-row: 2 / span 1;
+}
+
+.clients{
+  grid-row: 3 / span 1;
+}
+
+.method{
+  grid-row: 4 / span 1;
+}
+
+.contact{
+  grid-row: 5 / span 1;
 }
 
 /* Requirement 8 */
@@ -130,36 +145,38 @@ img {
 
 /* Requirement 9 */
 .about-image, .clients-image, .method-image, .contact-image {
-  grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column: 1 / span 4;
   max-height: 500px;
   overflow: hidden;
 }
 
-/* About */
-.about, .about-image {
-  grid-row-start: 1;
+.about-image{
+  grid-row: 2 / span 1;
 }
 
-/* Clients */
-.clients, .clients-image {
-  grid-row-start: 2;
+.clients-image{
+  grid-row: 3 / span 1;
 }
 
-/* Methods */
-.method, .method-image {
-  grid-row-start: 3;
+.method-image{
+  grid-row: 4 / span 1;
 }
 
-.contact, .contact-image {
-  grid-row-start: 4;
+.contact-image{
+  grid-row: 5 / span 1;
 }
 
 /* Requirement 10 */
 .text {
   align-self: center;
+  justify-self: center;
   max-height: 25vh;
   overflow: scroll;
+  overflow-x: hidden;
+}
+
+.text::-webkit-scrollbar {
+  background: transparent;
 }
 
 @media screen and (min-width: 700px){
@@ -176,7 +193,7 @@ img {
   
   /* Requirements 12-15 here: */
 
-  /* Requirement 12 */
+  /* TODO: Requirement 12 */
 
   /* Requirement 13 */
   .container {
