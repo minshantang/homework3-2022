@@ -123,19 +123,19 @@ a:focus {
 }
 
 .about{
-  grid-row: 2 / span 1;
+  grid-row: 1 / span 1;
 }
 
 .clients{
-  grid-row: 3 / span 1;
+  grid-row: 2 / span 1;
 }
 
 .method{
-  grid-row: 4 / span 1;
+  grid-row: 3 / span 1;
 }
 
 .contact{
-  grid-row: 5 / span 1;
+  grid-row: 4 / span 1;
 }
 
 /* Requirement 8 */
@@ -151,19 +151,19 @@ img {
 }
 
 .about-image{
-  grid-row: 2 / span 1;
+  grid-row: 1 / span 1;
 }
 
 .clients-image{
-  grid-row: 3 / span 1;
+  grid-row: 2 / span 1;
 }
 
 .method-image{
-  grid-row: 4 / span 1;
+  grid-row: 3 / span 1;
 }
 
 .contact-image{
-  grid-row: 5 / span 1;
+  grid-row: 4 / span 1;
 }
 
 /* Requirement 10 */
@@ -197,8 +197,9 @@ img {
 
   /* Requirement 13 */
   .container {
+    display: grid;
     grid-template-columns: 50px auto 500px auto 50px;
-    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px 300px;
   }
 
   /* Requirement 14 */
