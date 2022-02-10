@@ -109,7 +109,7 @@ a:focus {
 
 /* Requirement 6 */
 .intro {
-  background: url("../images/header.jpg") #858585;
+  background: url("../images/header.jpg") #707070;
   min-height: 400px;
   background-attachment: fixed;
   background-position: center;
