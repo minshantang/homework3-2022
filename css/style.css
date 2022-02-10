@@ -71,7 +71,7 @@ footer a:visited{
 /*****  End Starter Code ****/
 
 /* Requirement 1 code here*/
-a:link {
+nav a {
   text-decoration: none;
 }
 
@@ -109,32 +109,32 @@ a:focus {
 
 /* Requirement 6 */
 .intro {
+  background: url("../images/header.jpg") #858585;
+  min-height: 400px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 400px;
-  background-image: url("../images/header.jpg");
 }
 
 /* Requirement 7 */
 .about, .clients, .method, .contact {
-  grid-column: 2 / span 1;
+  grid-column: 2 / 3;
 }
 
-.about{
+.about, .about-image {
   grid-row: 1 / span 1;
 }
 
-.clients{
+.clients, .clients-image {
   grid-row: 2 / span 1;
 }
 
-.method{
+.method, .method-image{
   grid-row: 3 / span 1;
 }
 
-.contact{
+.contact, .contact-image {
   grid-row: 4 / span 1;
 }
 
@@ -145,38 +145,16 @@ img {
 
 /* Requirement 9 */
 .about-image, .clients-image, .method-image, .contact-image {
-  grid-column: 1 / span 4;
+  grid-column: 1 / span 3;
   max-height: 500px;
   overflow: hidden;
-}
-
-.about-image{
-  grid-row: 1 / span 1;
-}
-
-.clients-image{
-  grid-row: 2 / span 1;
-}
-
-.method-image{
-  grid-row: 3 / span 1;
-}
-
-.contact-image{
-  grid-row: 4 / span 1;
 }
 
 /* Requirement 10 */
 .text {
   align-self: center;
-  justify-self: center;
   max-height: 25vh;
   overflow: scroll;
-  overflow-x: hidden;
-}
-
-.text::-webkit-scrollbar {
-  background: transparent;
 }
 
 @media screen and (min-width: 700px){
@@ -194,6 +172,10 @@ img {
   /* Requirements 12-15 here: */
 
   /* TODO: Requirement 12 */
+  a.skip:focus {
+    left: 0;
+    top: 20px;
+  }
 
   /* Requirement 13 */
   .container {
